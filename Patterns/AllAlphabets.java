@@ -273,7 +273,7 @@ public static void q(int n){
 
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
-                if(j==0 && i<=3*n/4 || i<=3*n/4 && j==3*n/4 || i==0 && j<n/2 ||i==3*n/4 && j<=n/4 || i-j ==0 && i>n/2){
+                if( j==0 && i<3*n/4 || j==n-1 && i<3*n/4 ||i==0 && j<3*n/4|| i==3*n/4 && j<3*n/4){
                     System.out.print("* ");
                 }else{
                     System.out.print(" ");
@@ -286,11 +286,28 @@ public static void q(int n){
 }
 
 
+public static void r(int n){
+    System.out.println();
+    for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                        if( j==0|| j==n/2 && i<=n/2  || i==n/2 && j<n/2 || i-j == n/2){
+                            System.out.print("* ");
+                        }
+                        else{
+                            System.out.print("  ");
+                        }
+                    }
+                    System.out.println();  
+    
+            }
+}
+
+
 
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int n = 14;
+        int n = 11;
         System.out.print("Enter a character  :");
         char alpha = scanner.next().charAt(0);
 
@@ -312,7 +329,11 @@ public static void q(int n){
             case  'o', 'O' :   o(n); break;
             case  'P', 'p' :   p(n); break;
             case  'Q', 'q' :   q(n); break;
-        
+            case  'R', 'r' :   r(n); break;
+            // case  'S', 's' :   s(n); break;
+            // case  't', 'T' :   t(n); break;
+            // case  'U', 'u' :   u(n); break;
+            
         
             default:
                 break;
