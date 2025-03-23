@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+   
 public class AllAlphabets {
 
     //for a
@@ -303,6 +303,23 @@ public static void r(int n){
 }
 
 
+public static void s(int n){
+    System.out.println();
+    for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                        if( j==0 && i<=n/2 || i==n/2 && j<=n/2 || j<=n/2 && i==n-1 || i==0 && j<=n/2|| j==n/2 && i>=n/2){
+                            System.out.print("* ");
+                        }
+                        else{
+                            System.out.print("  ");
+                        }
+                    }
+                    System.out.println();  
+    
+            }
+}
+
+
 
 
     public static void main(String[] args) {
@@ -330,7 +347,7 @@ public static void r(int n){
             case  'P', 'p' :   p(n); break;
             case  'Q', 'q' :   q(n); break;
             case  'R', 'r' :   r(n); break;
-            // case  'S', 's' :   s(n); break;
+            case  'S', 's' :   s(n); break;
             // case  't', 'T' :   t(n); break;
             // case  'U', 'u' :   u(n); break;
             
