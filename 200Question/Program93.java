@@ -18,13 +18,20 @@ public class Program93 {
         return count;
     }
     public static int cyclicNo(int num,int i){
+<<<<<<< HEAD
         int n = num*i;
         System.out.println(n);
+=======
+        int num2 = num*i;
+        System.out.println(num);
+        System.out.println(num2);
+>>>>>>> master
         int temp =num;
         int count=0;
         int rem1=0,rem2=0;
         while (num!=0) {
             rem1 = num%10;
+<<<<<<< HEAD
             num/=10;
             while(n!=0){
                 rem2 = n%10;
@@ -37,17 +44,53 @@ public class Program93 {
         if(count ==countAllTheDigits(temp)) return 1;
         else return 0;
     }
+=======
+            int n =num2;
+            while(n!=0){
+                        rem2 = n%10;
+                        System.out.println(" the count of n is "+count);
+                        if(rem1 !=rem2) {
+                            n=n/10;
+                        }else{
+                            
+                            count=count +1;
+                            break;
+                        }
+                 // System.out.println(rem1+" "+rem2);
+            }
+            num/=10;
+    }
+        if((count) ==(countAllTheDigits(temp)) ){
+           System.out.println("true");
+           return 0;
+        }
+        else {
+            System.out.println("False");
+            return 1;
+        }
+}
+
+>>>>>>> master
 
 public static void main(String[] args) {
         
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a number : ");
+<<<<<<< HEAD
         int num = 12857;
         int flag =0;
         int count = countAllTheDigits(num);
         for(int i=1;i<=count;i++){
            if( cyclicNo(num,i)!=0) flag =1;
            else flag =0;
+=======
+        int num = 142857;
+        int flag =1;
+        int count = countAllTheDigits(num);
+        for(int i=1;i<=count;i++){
+           if( cyclicNo(num,i)!=0) flag =0;
+           else flag =1;
+>>>>>>> master
             
         }
         if(flag!=0) System.out.println( "\n It is cyclic Number");

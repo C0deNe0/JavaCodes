@@ -1,7 +1,12 @@
 import java.util.Scanner;
+<<<<<<< HEAD
    
 public class AllAlphabets {
 
+=======
+
+public class AllAlphabets {
+>>>>>>> master
     //for a
     public static void a(int n){
         System.out.println();
@@ -16,7 +21,11 @@ public class AllAlphabets {
                 }
                 System.out.println();                
             }
+<<<<<<< HEAD
  System.out.println("\n");
+=======
+ System.out.println("");
+>>>>>>> master
     }
 
     //  For b
@@ -31,7 +40,11 @@ public class AllAlphabets {
                         System.out.print("  ");
                     }
                 }
+<<<<<<< HEAD
                 System.out.println("\n");  
+=======
+                System.out.println("");  
+>>>>>>> master
 
         }
     }
@@ -47,7 +60,11 @@ public class AllAlphabets {
                         System.out.print("  ");
                     }
                 }
+<<<<<<< HEAD
                 System.out.println("\n");  
+=======
+                System.out.println("");  
+>>>>>>> master
 
         }
 
@@ -81,7 +98,11 @@ public class AllAlphabets {
                                 System.out.print("  ");
                             }
                         }
+<<<<<<< HEAD
                         System.out.println("\n");  
+=======
+                        System.out.println("");  
+>>>>>>> master
         
                 }
     }
@@ -97,7 +118,11 @@ public class AllAlphabets {
                                 System.out.print("  ");
                             }
                         }
+<<<<<<< HEAD
                         System.out.println("\n");  
+=======
+                        System.out.println("");  
+>>>>>>> master
         
                 }
     }
@@ -106,14 +131,22 @@ public static void g(int n){
     System.out.println();
     for (int i = 0; i < n; i++) {
                 for (int j = 0; j < n; j++) {
+<<<<<<< HEAD
                         if( i==0 || j==0 || i ==n-1  ){
+=======
+                        if( i==0 || j==0 || i ==n-1 || j==n-1 && i>=n/2 || i==n/2 && j>=n/2  ){
+>>>>>>> master
                             System.out.print("* ");
                         }
                         else{
                             System.out.print("  ");
                         }
                     }
+<<<<<<< HEAD
                     System.out.println("\n");  
+=======
+                    System.out.println("");  
+>>>>>>> master
     
             }
 }
@@ -130,7 +163,11 @@ public static void h(int n){
                             System.out.print("  ");
                         }
                     }
+<<<<<<< HEAD
                     System.out.println("\n");  
+=======
+                    System.out.println("");  
+>>>>>>> master
     
             }
 }
@@ -147,7 +184,11 @@ public static void i(int n){
                             System.out.print("  ");
                         }
                     }
+<<<<<<< HEAD
                     System.out.println("\n");  
+=======
+                    System.out.println();  
+>>>>>>> master
     
             }
 }
@@ -164,7 +205,11 @@ public static void j(int n){
                             System.out.print("  ");
                         }
                     }
+<<<<<<< HEAD
                     System.out.println("\n");  
+=======
+                    System.out.println();  
+>>>>>>> master
     
             }
 }
@@ -174,14 +219,22 @@ public static void k(int n){
     System.out.println();
     for (int i = 0; i < n; i++) {
                 for (int j = 0; j < n; j++) {
+<<<<<<< HEAD
                         if( j==0|| i+1 ==n/2 || i-j ==n/2 ){
+=======
+                        if( j==0|| i+j==n/2 || i-j ==n/2 ){
+>>>>>>> master
                             System.out.print("* ");
                         }
                         else{
                             System.out.print("  ");
                         }
                     }
+<<<<<<< HEAD
                     System.out.println("\n");  
+=======
+                    System.out.println();  
+>>>>>>> master
     
             }
 }
@@ -198,7 +251,11 @@ public static void l(int n){
                             System.out.print("  ");
                         }
                     }
+<<<<<<< HEAD
                     System.out.println("\n");  
+=======
+                    System.out.println();  
+>>>>>>> master
     
             }
 }
@@ -214,7 +271,11 @@ public static void m(int n){
                             System.out.print("  ");
                         }
                     }
+<<<<<<< HEAD
                     System.out.println("\n");  
+=======
+                    System.out.println("");  
+>>>>>>> master
     
             }
 }
@@ -232,7 +293,11 @@ public static void n(int n){
                             System.out.print("  ");
                         }
                     }
+<<<<<<< HEAD
                     System.out.println("\n");  
+=======
+                    System.out.println("");  
+>>>>>>> master
     
             }
 }
@@ -314,12 +379,137 @@ public static void s(int n){
                             System.out.print("  ");
                         }
                     }
+<<<<<<< HEAD
+=======
+                    System.out.println();
+    
+            }
+}
+
+
+public static void t(int n){
+    System.out.println();
+    for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                        if( i==0 || j==n/2){
+                            System.out.print("* ");
+                        }
+                        else{
+                            System.out.print("  ");
+                        }
+                    }
+                    System.out.println();  
+    
+            }
+}
+
+public static void u(int n){
+    System.out.println();
+    for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                        if( j==0 && i<=3*n/4 || j==n-1 && i<= 3*n/4 || i==n-1 && j>=n/4 &&j<=3*n/4  || i-j==3*n/4 || i+j ==7*n/4){
+                            System.out.print("* ");
+                        }
+                        else{
+                            System.out.print("  ");
+                        }
+                    }
+                    System.out.println();  
+    
+            }
+}
+
+public static void v(int n){
+    System.out.println();
+    for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                        if( j==0 && i<=n/2 || j==n-1 && i<=n/2 || i-j ==n/2 || i+j ==3*n/2){
+                            System.out.print("* ");
+                        }
+                        else{
+                            System.out.print("  ");
+                        }
+                    }
+>>>>>>> master
                     System.out.println();  
     
             }
 }
 
 
+<<<<<<< HEAD
+=======
+public static void w(int n){   
+     System.out.println();
+    for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                        if(j==0 ||j==n-1 || i-j==0 && i>=n/2 || i+j ==n-1 && i>=n/2 ){
+                            System.out.print("* ");
+                        }
+                        else{
+                            System.out.print("  ");
+                        }
+                    }
+                    System.out.println();  
+    
+            }}
+
+
+
+
+public static void x(int n){
+    System.out.println();
+    for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                        if( i+j==n-1 || i-j==0){
+                            System.out.print("* ");
+                        }
+                        else{
+                            System.out.print("  ");
+                        }
+                    }
+                    System.out.println();  
+     }
+}
+
+
+public static void y(int n){
+    System.out.println();
+    for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                        if( j==n/2 && i>=n/2 || i-j==0 && i<=n/2 || i+j==n-1 && i<=n/2 ){
+                            System.out.print("* ");
+                        }
+                        else{
+                            System.out.print("  ");
+                        }
+                    }
+                    System.out.println();  
+    
+            }
+}
+
+public static void z(int n){
+    System.out.println();
+    for (int i = 0; i < n; i++) {
+                for (int j = 0; j < n; j++) {
+                        if( i==0 || i==n-1 || i+j==n-1  ){
+                            System.out.print("* ");
+                        }
+                        else{
+                            System.out.print("  ");
+                        }
+                    }
+                    System.out.println();  
+    
+            }
+}
+
+
+public static void skillbout(int n){
+    s(n);k(n);i(n);l(n);l(n);
+}
+>>>>>>> master
 
 
     public static void main(String[] args) {
@@ -348,12 +538,26 @@ public static void s(int n){
             case  'Q', 'q' :   q(n); break;
             case  'R', 'r' :   r(n); break;
             case  'S', 's' :   s(n); break;
+<<<<<<< HEAD
             // case  't', 'T' :   t(n); break;
             // case  'U', 'u' :   u(n); break;
             
         
             default:
                 break;
+=======
+            case  't', 'T' :   t(n); break;
+            case  'U', 'u' :   u(n); break;
+            case  'V', 'v' :   v(n); break;
+            case  'W', 'w' :   w(n); break;
+            case  'X', 'x' :   x(n); break;
+            case  'Y', 'y' :   y(n); break;
+            case  'Z', 'z' :   z(n); break;
+            
+        
+            default:
+                skillbout(n);break;
+>>>>>>> master
         }
         scanner.close();
     }    
