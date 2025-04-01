@@ -1,5 +1,6 @@
 
 
+
 public class FirstPattern {
 
     static int i;
@@ -11,7 +12,10 @@ public class FirstPattern {
             System.out.print(n+" ");
         }
        
-    
+    static int factorial(int n){
+        if(n ==0) return 1;
+        else return n*factorial(n-1);
+    }
     
     public static void main(String[] args) {
         // for(int i=0;i<4;i++){
