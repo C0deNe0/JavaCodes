@@ -324,6 +324,390 @@ public class InstagramPatterns2 {
                    System.out.println();  
             }
     }
+
+    
+static void pat37( int x){
+
+    for(int i=0;i<x;i++){
+        for(int j=0;j<(2*x)-1;j++){
+            if(i+j==(2*(x-1))||i-j==0){
+                System.out.print((char)('A'+(x-i-1))+" ");
+            }    
+            else{
+                System.out.print("  ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+static void pat38( int n){
+    int x=n*2-1;
+    for(int i=0;i<x;i++){
+        for(int j=0;j<(2*x)-1;j++){
+            if(i<=x/2&&(i+j==x-1||i-j==-(x-1))||(i>=x/2&&(i-j==0||i+j==2*(x-1)))){
+                System.out.print("* ");
+            }    
+            else{
+                System.out.print("  ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+
+static void pat39( int n){
+    int x=n*2-1;
+    for(int i=0;i<x;i++){
+        for(int j=0;j<(2*x)-1;j++){
+            if(i<=x/2&&(i+j==x-1||i-j==-(x-1))||(i>=x/2&&(i-j==0||i+j==2*(x-1)))){
+                System.out.print((i<=x/2?1+i:x-i)+" ");
+            }    
+            else{
+                System.out.print("  ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+static void pat40( int n){
+    int x=n*2-1;
+    for(int i=0;i<x;i++){
+        for(int j=0;j<(2*x)-1;j++){
+            if(i<=x/2&&(i+j==x-1||i-j==-(x-1))||(i>=x/2&&(i-j==0||i+j==2*(x-1)))){
+                System.out.print((i<=x/2?n-i:i-n+2)+" ");
+            }    
+            else{
+                System.out.print("  ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+
+
+static void pat41( int n){
+    int x=n*2-1;
+    for(int i=0;i<x;i++){
+        for(int j=0;j<(2*x)-1;j++){
+            if(i<=x/2&&(i+j==x-1||i-j==-(x-1))||(i>=x/2&&(i-j==0||i+j==2*(x-1)))){
+                System.out.print((char)(i<=x/2?'A'+i:'A'+(x-i-1))+" ");
+            }    
+            else{
+                System.out.print("  ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+
+
+static void pat42( int n){
+    int x=n*2-1;
+    for(int i=0;i<x;i++){
+        for(int j=0;j<(2*x)-1;j++){
+            if(i<=x/2&&(i+j==x-1||i-j==-(x-1))||(i>=x/2&&(i-j==0||i+j==2*(x-1)))){
+                System.out.print((char)(i<=x/2?'A'+(n-i-1):'A'+(i-n+1))+" ");
+            }    
+            else{
+                System.out.print("  ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+
+static void pat43( int x){
+
+    for(int i=0;i<x;i++){
+        for(int j=0;j<(2*x)-1;j++){
+            if(i+j<=x-1||i-j<=-(x-1)){
+                System.out.print("* ");
+            }    
+            else{
+                System.out.print("  ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+
+
+static void pat44( int x){
+
+    for(int i=0;i<x;i++){
+        for(int j=0;j<(2*x)-1;j++){ 
+            if(i+j>=(2*(x-1))||i-j>=0){
+                System.out.print("* ");
+            }    
+            else{
+                System.out.print("  ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+static void pat46( int x){
+
+    for(int i=0;i<x;i++){
+        for(int j=0;j<(2*x)-1;j++){ 
+            if(i+j>=(2*(x-1))||i-j>=0){
+                System.out.print("  * ");
+            }    
+            else{
+                System.out.print("   ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+
+static void pat47( int x){
+
+    for(int i=0;i<x;i++){
+        for(int j=0;j<(2*x)-1;j++){ 
+            if(i+j>=x-1&&i-j>=0||i+j>=2*(x-1)&&i-j>=-(x-1)){
+                System.out.print("* ");
+            }    
+            else{
+                System.out.print("  ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+
+static void pat49( int x){
+    for(int i=0;i<x;i++){
+        for(int j=0;j<x;j++){
+            if(i+j==(x-1)||i-j==0){
+                System.out.print("* ");
+            }    
+            else{
+                System.out.print("  ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+
+static void pat50(  int x){
+    for(int i=0;i<x;i++){
+        for(int j=0;j<x;j++){
+            if(i+j==(x-1)||i-j==0){
+                System.out.print(1+i+" ");
+            }    
+            else{
+                System.out.print("  ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+
+static void pat51( int x){
+    for(int i=0;i<x;i++){
+        for(int j=0;j<x;j++){
+            if(i+j==(x-1)||i-j==0){
+                System.out.print(x-i+" ");
+            }    
+            else{
+                System.out.print("  ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+
+
+static void pat52( int x){
+    for(int i=0;i<x;i++){
+        for(int j=0;j<x;j++){
+            if(i+j==(x-1)||i-j==0){
+                System.out.print(1+j+" ");
+            }    
+            else{
+                System.out.print("  ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+
+static void pat53( int x){
+    for(int i=0;i<x;i++){
+        for(int j=0;j<x;j++){
+            if(i+j==(x-1)||i-j==0){
+                System.out.print(x-j+" ");
+            }    
+            else{
+                System.out.print("  ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+
+static void pat54( int x){
+    for(int i=0;i<x;i++){
+        for(int j=0;j<x;j++){
+            if(i+j==(x-1)||i-j==0){
+                System.out.print((char)('A'+i)+" ");
+            }    
+            else{
+                System.out.print("  ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+
+static void pat55( int x){
+    for(int i=0;i<x;i++){
+        for(int j=0;j<x;j++){
+            if(i+j==(x-1)||i-j==0){
+                System.out.print((char)('A'+j)+" ");
+            }    
+            else{
+                System.out.print("  ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+
+
+
+static void pat56( int x){
+    for(int i=0;i<x;i++){
+        for(int j=0;j<x;j++){
+            if(i-j==0){
+                System.out.print("0 ");
+            }    
+            else{
+                System.out.print("* ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+
+
+static void pat57( int x){
+    for(int i=0;i<x;i++){
+        for(int j=0;j<x;j++){
+            if(i-j<=0){
+                System.out.print("0 ");
+            }    
+            else{
+                System.out.print("* ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+
+static void pat58( int x){
+    for(int i=0;i<x;i++){
+        for(int j=0;j<x;j++){
+            if(i-j==0||i+j==x-1){
+                System.out.print("* ");
+            }    
+            else{
+                System.out.print("0 ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+
+static void pat59( int x){
+    for(int i=0;i<x;i++){
+        for(int j=0;j<x;j++){
+            if(i==x/2&&j==x/2){
+                System.out.print("0 ");
+            }    
+            else{
+                System.out.print("* ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+static void pat60( int x){
+    for(int i=0;i<x;i++){
+        for(int j=0;j<x;j++){
+            if(i==x/2||j==x/2){
+                System.out.print("* ");
+            }    
+            else{
+                System.out.print("  ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+
+static void pat61( int x){
+    for(int i=0;i<x;i++){
+        for(int j=0;j<x;j++){
+            if(i==x/2||j==x/2){
+                System.out.print("* ");
+            }    
+            else{
+                System.out.print("0 ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+
+
     public static void main(String[] args) {
         // pat21(5);
         // pat22(7);
@@ -341,5 +725,10 @@ public class InstagramPatterns2 {
         pat34(5);
         pat35(5);
         pat36(5);
+        pat37(5);
+        pat38(5);
+        pat39(5);
+        pat40(5);
+
     }
 }
