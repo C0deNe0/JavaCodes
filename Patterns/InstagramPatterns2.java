@@ -706,6 +706,136 @@ static void pat61( int x){
 
 }
 
+static void pat62( int x){
+    for(int i=0;i<x;i++){
+        for(int j=0;j<x;j++){
+            if(i+j>=x/2&&i+j<=x-1&&i<3*((x/4))){
+                System.out.print("* ");
+            }    
+            else{
+                System.out.print("  ");
+            }      
+        }
+        System.out.println();
+    }
+
+    }
+
+    static void pat72( int x){
+        for(int i=0;i<x;i++){
+            for(int j=0;j<x;j++){
+                if(i==0||j==0||i==x-1||j==x-1){
+                    System.out.print("* ");
+                }    
+                else{
+                    System.out.print("  ");
+                }      
+            }
+            System.out.println();
+        }
+
+    }
+
+    
+static void pat73( int x){
+    for(int i=0;i<x;i++){
+        for(int j=0;j<x;j++){
+            if(i==0||j==0||i==x-1||j==x-1){
+                System.out.print("* ");
+            }    
+            else{
+                System.out.print("# ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+
+static void pat74( int x){
+    for(int i=0;i<x;i++){
+        for(int j=0;j<x;j++){
+            if(j==0||i==x-1||i-j==0){
+                System.out.print("* ");
+            }    
+            else{
+                System.out.print("  ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+static void pat75( int x){
+    for(int i=0;i<x;i++){
+        for(int j=0;j<x;j++){
+            if(j==0||i==x-1||i-j==0||i==0||j==x-1||i+j==x-1){
+                System.out.print("* ");
+            }    
+            else{
+                System.out.print("  ");
+            }      
+        }
+        System.out.println();
+    }
+
+}
+
+static void pat76( int x){
+
+    for(int i=0;i<x;i++){
+        int k=1;
+        for(int j=0;j<x;j++){ 
+            if(j%2==0){
+                System.out.print(1+i+" ");
+            }    
+            else{
+                System.out.print(k+" ");
+                k++;
+            }     
+        }
+        System.out.println();
+    }
+
+}
+
+static void pat77( int x){
+
+    for(int i=0;i<x;i++){
+        int k=1;
+        for(int j=0;j<x;j++){ 
+            if(j%2!=0){
+                System.out.print(1+i+" ");
+            }    
+            else{
+                System.out.print(k+" ");
+                k++;
+            }     
+        }
+        System.out.println();
+    }
+
+}
+
+
+static void pat78( int x){
+
+    for(int i=0;i<x;i++){
+        for(int j=0;j<x;j++){ 
+            if(i==x/2||j==x/2||i-j==-x/2||i-j==x/2||i+j==x/2||i+j==3*(x/2)){
+                System.out.print("* ");
+            }    
+            else{
+                System.out.print("  ");
+            }     
+        }
+        System.out.println();
+    }
+
+}
+
 
 
     public static void main(String[] args) {
@@ -722,13 +852,48 @@ static void pat61( int x){
         // pat31(7);
         // pat32(7);
         // pat33(5);
-        pat34(5);
-        pat35(5);
-        pat36(5);
-        pat37(5);
-        pat38(5);
-        pat39(5);
-        pat40(5);
+        // pat34(5);
+        // pat35(5);
+        // pat36(5);
+        // pat37(5);
+        // pat38(5);
+        // pat39(5);
+        // pat40(5);
+        // pat41(5);
+        // pat42(5);
+        // pat43(5);
+        // pat44(5);
+        // pat46(5);
+        // pat47(5);
+        // pat49(5);
+        // pat50(5);
+        // pat51(5);
+        // pat52(5);
+        // pat53(5);
+        // pat54(5);
+        // pat55(5);
+        // pat56(5);
+        // pat57(5);
+        // pat58(5);
+        // pat59(5);
+        // pat60(5);
+        // pat61(5);
+            // pat62(7);
+            // pat63(7);
+            // pat64(7);
+            // pat65(7);
+            // pat66(7);
+            // pat67(7);
+            // pat68(7);
+            // pat69(7);
+            // pat70(7);
+            // pat71(7);
+            // pat72(7);
+            // pat73(7);
+            // pat74(7);
+            // pat75(7);
+            // pat76(7);
+            // pat77(7);
 
     }
 }
