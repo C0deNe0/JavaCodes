@@ -496,6 +496,7 @@ static void pat47( int x){
 }
 
 
+<<<<<<< HEAD
     public static void pat48(int n) {
      n=9;
     for(int i=0;i<n;i++){
@@ -513,6 +514,8 @@ static void pat47( int x){
     
     
 
+=======
+>>>>>>> 5891bf9dc981893b168b691ad08e4c1b155cfa5f
 static void pat49( int x){
     for(int i=0;i<x;i++){
         for(int j=0;j<x;j++){
@@ -882,7 +885,10 @@ static void pat78( int x){
         // pat44(5);
         // pat46(5);
         // pat47(5);
+<<<<<<< HEAD
         // pat48(9);
+=======
+>>>>>>> 5891bf9dc981893b168b691ad08e4c1b155cfa5f
         // pat49(5);
         // pat50(5);
         // pat51(5);
