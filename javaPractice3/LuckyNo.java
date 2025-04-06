@@ -15,9 +15,9 @@ public class LuckyNo {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a number :");
         int num =scanner.nextInt();
-        
+        int sum =0;
         while (sumOfDigit(num)>=9) {
-            sumOfDigit(num);
+            sum = sumOfDigit(num);
         }
         
 

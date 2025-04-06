@@ -496,6 +496,23 @@ static void pat47( int x){
 }
 
 
+    public static void pat48(int n) {
+     n=9;
+    for(int i=0;i<n;i++){
+    for(int k=0;k<5;k++){
+    for(int j=0;j<n;j++){
+    if(i+j==n/2 || i-j==-n/2)
+    System.out.print((char)(65+((n*k)+j)%26));
+    else
+    System.out.print(" ");
+    }
+    }
+    System.out.println();
+    }
+    }
+    
+    
+
 static void pat49( int x){
     for(int i=0;i<x;i++){
         for(int j=0;j<x;j++){
@@ -865,6 +882,7 @@ static void pat78( int x){
         // pat44(5);
         // pat46(5);
         // pat47(5);
+        // pat48(9);
         // pat49(5);
         // pat50(5);
         // pat51(5);
